@@ -1,9 +1,11 @@
 package com.example.androidnote
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.androidnote.databinding.ActivityMainBinding
+import com.example.androidnote.touchEvent.TouchEventCheckActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,8 +21,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clickEvent(){
-        binding.moveNoteBtn.setOnClickListener{
-//            주제에 맞는 프로젝트로 이동
+        binding.moveTouchEventBtn.setOnClickListener{
+//            터치 이벤트로 이동
+            val intent = Intent(this, TouchEventCheckActivity::class.java)
+            startActivity(intent)
 
         }
     }
