@@ -47,5 +47,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    // Reflection JVM dependency - https://kotlinlang.org/docs/reflection.html#jvm-dependency
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.5.20"
 
 }
