@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.androidnote.databinding.ActivityMainBinding
+import com.example.androidnote.storage.StorageCheckActivity
 import com.example.androidnote.touchEvent.TouchEventCheckActivity
 
 class MainActivity : AppCompatActivity() {
@@ -27,5 +28,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+        binding.moveStorageBtn.setOnClickListener{
+            val intent = Intent(this, StorageCheckActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
     }
 }

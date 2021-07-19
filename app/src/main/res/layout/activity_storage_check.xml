@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.example.androidnote.storage.StorageCheckActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        tools:context=".storage.StorageCheckActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내부 - 캐시"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/internalCacheTextView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내부 - 파일"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/internalFilesDirTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="외부 - 파일 - DCIM"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/externalDcimTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="외부 - "
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/externalExterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+
+    </LinearLayout>
+
+</layout>
