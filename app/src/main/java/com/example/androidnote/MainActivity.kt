@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.androidnote.databinding.ActivityMainBinding
+import com.example.androidnote.task.TaskActivity
 import com.example.androidnote.touchEvent.TouchEventCheckActivity
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,12 @@ class MainActivity : AppCompatActivity() {
         binding.moveTouchEventBtn.setOnClickListener{
 //            터치 이벤트로 이동
             val intent = Intent(this, TouchEventCheckActivity::class.java)
+            startActivity(intent)
+
+        }
+
+        binding.moveTaskBtn.setOnClickListener {
+            val intent = Intent(this, TaskActivity::class.java)
             startActivity(intent)
 
         }
