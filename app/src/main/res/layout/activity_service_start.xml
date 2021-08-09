@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+        <variable
+            name="activity"
+            type="com.example.androidnote.service.ServiceStartActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        tools:context=".service.ServiceStartActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스시작"
+            app:layout_constraintBottom_toTopOf="@+id/stop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스 중지"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/forStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포그라운드 시작"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/forStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포그라운드 스탑"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bindBinderExtended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스 바인드"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/unbindBinderExtended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스 바인드 해체" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/unbindBinderExtendedToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스 바인드 토스트" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bindMsgIpcService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bindMsgIpcService" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/unbindMsgIpcService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unbindMsgIpcService" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/showToastMsgIpc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="showToastMsgIpc" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/invokeAddFunMsgIpc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="invokeAddFunMsgIpc" />
+    </LinearLayout>
+
+</layout>

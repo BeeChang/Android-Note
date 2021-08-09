@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.androidnote.databinding.ActivityMainBinding
+import com.example.androidnote.service.ServiceStartActivity
 import com.example.androidnote.touchEvent.TouchEventCheckActivity
 
 class MainActivity : AppCompatActivity() {
@@ -27,5 +28,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+        binding.svcBtn.setOnClickListener{
+//            터치 이벤트로 이동
+            val intent = Intent(this, ServiceStartActivity::class.java)
+            startActivity(intent)
+
+        }
+
     }
 }
